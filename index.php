@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top-fluid" src="img/scar.png" height="346px" width="346">
+                    <img class="card-img-top-fluid" src="scar.png" height="346px" width="346">
                     <div class="card-body">
                         <h1 class ="card-title">Scarlet</h1>
                         <p class="card-text">GrimReaper</p>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top-fluid" src="img/chase.jpg" height="346px" width="346">
+                    <img class="card-img-top-fluid" src="chase.jpg" height="346px" width="346">
                     <div class="card-body">
                         <h1 class ="card-title">Chase</h1>
                         <p class="card-text">Detective</p>
@@ -45,7 +45,7 @@
             </div>
             <div class="col-4">
                 <div class="card">
-                    <img class="card-img-top-fluid" src="img/rabbit.jpg" height="346px" width="346">
+                    <img class="card-img-top-fluid" src="rabbit.jpg" height="346px" width="346">
                     <div class="card-body">
                         <h1 class ="card-title">Brook</h1>
                         <p class="card-text">Anorther GrimReaper</p>
