@@ -48,7 +48,7 @@
                     <img class="card-img-top-fluid" src="rabbit.jpg" height="346px" width="346">
                     <div class="card-body">
                         <h1 class ="card-title">Brook</h1>
-                        <p class="card-text">Anorther GrimReaper</p>
+                        <p class="card-text">Another GrimReaper</p>
                         <p class="card-text">Frenemy!</p>
                      <div class="card-footer">
                         Author:graveweaver
