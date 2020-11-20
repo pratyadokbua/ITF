@@ -14,3 +14,7 @@ echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 mysqli_close($conn);
 ?>
+<html>
+<body><a> href="https://sometable.azurewebsites.net/">Back_to_Base</a>
+  </body>
+</html>
