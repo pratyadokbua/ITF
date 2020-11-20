@@ -24,3 +24,8 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 ?>
+<html>
+<body>
+  <a href="https://sometable.azurewebsites.net/">Back_to_Base</a>
+  </body>
+</html>
