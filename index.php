@@ -5,7 +5,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'pratya-dbase.mysql.database.azure.com', 'It63070100@pratya-dbase', 'Ice254445', 'ITF', 'guestbook' , 3306);
+mysqli_real_connect($conn, 'prattya.mysql.database.azure.com', 'it63070100', 'YBPfrp64', 'ITFLab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -22,11 +22,15 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-  <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
-  </tr>
+  <div class="container">
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <td><?php echo $Result['Name'];?></div></td>
+        <td><?php echo $Result['Comment'];?></td>
+        <td><?php echo $Result['Link'];?></td>
+      </tr>
+    <thead>
 <?php
 }
 ?>
