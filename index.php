@@ -22,15 +22,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-  <div class="container">
-    <table class="table table-striped">
-    <thead>
-      <tr>
-        <td><?php echo $Result['Name'];?></div></td>
-        <td><?php echo $Result['Comment'];?></td>
-        <td><?php echo $Result['Link'];?></td>
-      </tr>
-    <thead>
+  <tr>
+    <td><?php echo $Result['Name'];?></div></td>
+    <td><?php echo $Result['Comment'];?></td>
+    <td><?php echo $Result['Link'];?></td>
+  </tr>
 <?php
 }
 ?>
