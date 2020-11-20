@@ -36,6 +36,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href="https://sometable.azurewebsites.net/">Back_to_Base</a>
+<a href="https://sometable.azurewebsites.net/">Add_Info</a>
 </body>
 </html>
