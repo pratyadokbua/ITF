@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ITF Lab</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LAB01</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: darkred;
+        }
+        h1{
+            font-family: sans-serif;
+        }
+    </style>
 <body>
-<?php
-$conn = mysqli_init();
-mysqli_real_connect($conn, 'ihost.it.kmitl.ac.th', 'it63070100', 'YBPfrp64', 'it63070100_pratya', 'test', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-$res = mysqli_query($conn, 'SELECT * FROM test');
-?>
-<table width="600" border="1">
-  <tr>
-    <th width="100"> <div align="center">Name</div></th>
-    <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">web </div></th>
-    <th width="150"> <div align="center">Action </div></th>
-  </tr>
-<?php
-while($Result = mysqli_fetch_array($res))
-{
-?>
-  <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['web'];?></td>
-    <td><?php echo '<a href="delete.php?id='.$Result['id'].'">Delete</a>'?></td>
-  </tr>
-<?php
-}
-?>
-</table>
-<?php
-mysqli_close($conn);
-?>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top-fluid" src="scar.png" height="346px" width="346">
+                    <div class="card-body">
+                        <h1 class ="card-title">Scarlet</h1>
+                        <p class="card-text">GrimReaper</p>
+                        <p class="card-text">MainCast!</p>
+                     <div class="card-footer">
+                        Author:graveweaver
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top-fluid" src="chase.jpg" height="346px" width="346">
+                    <div class="card-body">
+                        <h1 class ="card-title">Chase</h1>
+                        <p class="card-text">Detective</p>
+                        <p class="card-text">MainCast!</p>
+                     <div class="card-footer">
+                        Author:graveweaver
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top-fluid" src="rabbit.jpg" height="346px" width="346">
+                    <div class="card-body">
+                        <h1 class ="card-title">Brook</h1>
+                        <p class="card-text">Another GrimReaper</p>
+                        <p class="card-text">Frenemy!</p>
+                     <div class="card-footer">
+                        Author:graveweaver
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
