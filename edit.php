@@ -8,7 +8,7 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
 $id = $_GET['ID'];
 $sql = "UPDATE FROM totalprice SET Price=$Price, Discount=%Discount, WHERE id = $ID";
 if (mysqli_query($conn, $sql)) {
-echo "Record deleted successfully";
+echo "Record Update successfully";
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
