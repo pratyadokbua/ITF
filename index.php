@@ -29,7 +29,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Price'];?></td>
     <td><?php echo $Result['Discount'];?></td>
     <td><?php echo $Result['Discount'];?></td>
-    <td><?php echo '<a href="delete.php?id='.$Result['id'].'">Delete</a>'?></td>
+    <td><?php echo '<a href="edit.php?id='.$Result['id'].'">Edit</a>'?></td>
   </tr>
 <?php
 }
