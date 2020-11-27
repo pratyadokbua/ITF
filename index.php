@@ -27,8 +27,8 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Product'];?></div></td>
     <td><?php echo $Result['Price'];?></td>
-    <td><?php echo $Result[('Discount'/100)*'Price'+'Price'];?></td>
-    <td><?php echo $Result['Total'];?></td>
+    <td><?php echo $Result['Discount'];?></td>
+    <td><?php echo $Result['(Discount'/100)*'Price'+'Price'];?></td>
     <td><?php echo '<a href="delete.php?id='.$Result['id'].'">Delete</a>'?></td>
   </tr>
 <?php
