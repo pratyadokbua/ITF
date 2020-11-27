@@ -13,7 +13,7 @@ $Price = $_POST['Price'];
 $Discount = $_POST['Discount'];
 
 
-$sql = "INSERT INTO totalprice (Product , Price, Discount) VALUES ('$Product', '$Price', '$Discount'";
+$sql = "INSERT INTO totalprice (Product , Price, Discount) VALUES ('$Product', '$Price', '$Discount')";
 
 
 if (mysqli_query($conn, $sql)) {
