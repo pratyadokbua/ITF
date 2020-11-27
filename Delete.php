@@ -16,6 +16,6 @@ mysqli_close($conn);
 ?>
 <html>
 <body>
-  <a href="https://sometable.azurewebsites.net/">Back_to_Base</a>
+  <a href="https://examtotalprice.azurewebsites.net/">Back_to_Base</a>
   </body>
 </html>
