@@ -6,7 +6,7 @@ if (mysqli_connect_errno($conn))
 die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 $id = $_GET['ID'];
-$sql = "UPDATE FROM totalprice Value (Price=$Price, Discount=%Discount), WHERE id =$ID";
+$sql = "UPDATE VALUE (Price=$Price, Discount=%Discount) FROM totalprice, WHERE id =$ID";
 if (mysqli_query($conn, $sql)) {
 echo "Record Update successfully";
 } else {
