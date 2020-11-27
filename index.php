@@ -38,6 +38,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-<a href="https://examtotalprice.azurewebsites.net/formprice.html>Add_Info</a>
+<a href="https://examtotalprice.azurewebsites.net/formprice.html">Add_Info</a>
 </body>
 </html>
